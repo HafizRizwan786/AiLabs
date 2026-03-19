@@ -1,5 +1,4 @@
 # Task 1
-"""
 class Add:
     def __init__(self,a):
         self.a=a
@@ -55,7 +54,7 @@ x.printname()
 x.welcome()
 
 
-"""
+
 # Task 4
 class Person:
     def __init__(self,fname,lname):
