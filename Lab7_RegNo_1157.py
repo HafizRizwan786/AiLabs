@@ -115,13 +115,19 @@ states = [
     [2, 8, 1, 4, 6, 3, 0, 7, 5],
 ]
 
-for state in states:
-    print(f"Start: {state}")
+# for state in states:
+#     print(f"Start: {state}")
 
-    for name, fn in [("BFS", Puzzle.bfs), ("A*", Puzzle.astar)]:
-        Puzzle.count = 0
-        t = time()
-        sol = fn(state)
-        print(f" {name} → {sol} | nodes: {Puzzle.count} | time: {time()-t:.4f}s")
+#     for name, fn in [("BFS", Puzzle.bfs), ("A*", Puzzle.astar)]:
+#         Puzzle.count = 0
+#         t = time()
+#         sol = fn(state)
+#         print(f" {name} → {sol} | nodes: {Puzzle.count} | time: {time()-t:.4f}s")
 
-    print()
+#     print()
+
+state = states[1]   # second index wali state
+
+solution = Puzzle.astar(state)
+
+print("Solution:", solution)

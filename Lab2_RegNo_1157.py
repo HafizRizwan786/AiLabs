@@ -1,3 +1,4 @@
+import math
 # Question 1
 cel=int(input("Enter Temperature in Celsius: "))
 f=(9/5)*cel+32
@@ -7,7 +8,7 @@ print(f"{cel} Celsius is {f} Fahrenheit")
 # Question 2
 r=float(input('Enter radius: '))
 l=int(input('Enter length: '))
-a=3.14*r*r
+a=math.pi*r*r
 v=a*l
 print(f"The area is {a}")
 print(f"The volume is {v}")
